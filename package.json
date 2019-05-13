@@ -1,0 +1,23 @@
+{
+  "name": "nodejs-knex",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "./node_modules/.bin/nodemon --inspect=0.0.0.0:9229 ./bin/www",
+    "knex": "./node_modules/.bin/knex"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "hbs": "~4.0.4",
+    "http-errors": "~1.6.3",
+    "knex": "^0.16.7",
+    "morgan": "~1.9.1",
+    "sqlite3": "^4.0.8"
+  },
+  "devDependencies": {
+    "jest": "^24.8.0",
+    "nodemon": "^1.19.0"
+  }
+}
