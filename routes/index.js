@@ -3,9 +3,9 @@ const router = express.Router();
 const Products = require('../store/Products');
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
+router.get('/', function(req, res) {
   Products.listAll()
-    .then(products => {
+    .then(function(products) {
       res.render('index', { products });
     })
 });
