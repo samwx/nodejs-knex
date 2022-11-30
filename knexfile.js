@@ -1,6 +1,6 @@
 // Update with your config settings.
 
-module.exports = {
+const configs = {
 
   development: {
     client: 'sqlite3',
@@ -53,3 +53,5 @@ module.exports = {
   }
 
 };
+
+export default configs;

@@ -1,11 +1,11 @@
 
 exports.up = function(knex) {
-  return knex.schema.createTable('products', table => {
-    table.increments('id').primary()
-    table.string('name')
-    table.string('description')
-    table.decimal('price')
-    table.timestamps(false, true)
+  return knex.schema.createTable('products', column => {
+    column.increments('id').primary()
+    column.string('name')
+    column.string('description')
+    column.decimal('price')
+    column.timestamps(false, true)
   })
 };
 
